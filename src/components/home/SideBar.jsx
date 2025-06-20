@@ -8,7 +8,7 @@ import { MdAlternateEmail } from "react-icons/md";
 const SideBar = () => {
     return (
         // EBF0F7
-        <nav className="bg-[#fff] border border-[#d2d6e1] rounded-3xl h-[90vh] w-[23vw] p-5 fixed top-1/2 transform -translate-y-1/2 flex flex-col justify-center font-syne">
+        <nav className="bg-[#EBF0F7] border border-[#d2d6e1] rounded-3xl h-[90vh] w-[23vw] p-5 fixed top-1/2 transform -translate-y-1/2 flex flex-col justify-center font-syne">
             {/* logo */}
             <div className="mb-4">
                 <p className="font-bold text-center text-[#22232c]">Imane El Ouannane</p>
