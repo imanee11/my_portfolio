@@ -1,5 +1,7 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { motion, useAnimation, useMotionValue } from "framer-motion";
+import { DarkModeContext } from "../../../context/DarkModeContext";
+
 
 const getRotationTransition = (duration, from, loop = true) => ({
     from,
@@ -18,6 +20,7 @@ const getTransition = (duration, from) => ({
         stiffness: 300,
     },
 });
+
 
 const CircularText = ({
     text,
@@ -83,6 +86,9 @@ const CircularText = ({
         });
     };
 
+    const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+
     return (
         <motion.div
             className={`relative w-[150px] h-[150px] ${className}`}
@@ -101,7 +107,7 @@ const CircularText = ({
                 return (
                     <span
                         key={i}
-                        className="absolute font-syne left-1/2 top-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold"
+                        className="absolute font-syne left-1/2 top-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2 text-[10px] font-bold text-[#22232c] dark:text-[#E9E9F1]"
                         style={{ transform }}
                     >
                         {letter}
