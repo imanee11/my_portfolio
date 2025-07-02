@@ -4,6 +4,7 @@ import NavBar from '../components/home/NavBar';
 import Hero from '../components/home/Hero';
 import Portfolio from '../components/home/Portfolio';
 import { DarkModeContext } from '../context/DarkModeContext';
+import About from '../components/home/About';
 
 const Home = () => {
 
@@ -21,6 +22,7 @@ const Home = () => {
                     <NavBar />
                     <Hero />
                     <Portfolio />
+                    <About/>
                 </div>
             </div>
         </div>
